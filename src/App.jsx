@@ -45,7 +45,8 @@ const router = createBrowserRouter([
 function App() {
   const {background} = useStateContext()
   return (
-    <div className="font-nunito-sans max-w-[1440px] min-w-[375px] bg-red-600 m-auto" style={{background: background}}>
+    // use goggle fonts and
+    <div className="font-nunito-sans max-w-[1440px] min-w-[375px]  m-auto" style={{background: background}}>
       <RouterProvider router={router}/>
     </div>
   )

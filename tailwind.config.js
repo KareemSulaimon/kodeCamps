@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: { 
+      screens: {
+      'xs': {'max': '1100px'},
+      'xl': {'min': '750px'},
+      // => @media (min-width: 576px) { ... }
+      }
     },
   },
   plugins: [],

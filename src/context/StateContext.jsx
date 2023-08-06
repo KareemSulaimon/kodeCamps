@@ -27,7 +27,6 @@ export const StateContext = ({ children }) => {
   }, []);
 
 
-
   // Helper functions
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
@@ -56,11 +55,12 @@ export const StateContext = ({ children }) => {
     country.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // final Countries 
   const finalCountries = data.filter((country) =>
     filteredCountries.some((query) => country.name.includes(query))
   );
 
-
+// Activate dark Mode
   const darkModeActivate = () => {
     setBg(!bg);
   };
